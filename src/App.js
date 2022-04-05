@@ -11,7 +11,7 @@ import CreateDay from './component/voca/CreateDay';
 import Etc from './component/etc/Etc';
 import { useState } from 'react';
 
-function App(props) {
+function App() {
   
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
