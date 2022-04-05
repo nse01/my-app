@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from './component/Header';
 import ContentsArea from './component/ContentsArea';
 import TodoListContainer from './component/todolist/TodoListContainer';
@@ -14,7 +14,7 @@ import { useState } from 'react';
 function App() {
   
   return (
-    <HashRouter >
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="app_container">
         <Header />
         <ContentsArea />
@@ -28,11 +28,11 @@ function App() {
               <Route exact path="/voca/day/:day" component={Day} />
               <Route exact path="/voca/create_word" component={CreateWord} />
               <Route exact path="/voca/create_day" component={CreateDay} />
-              <Route component={EmptyPage} />
+              {/* <Route component={EmptyPage} /> */}
             </Switch>
           </Route>
           <Route exact path="/etc" component={Etc} />
-          <Route component={EmptyPage} />
+          {/* <Route component={EmptyPage} /> */}
         </Switch>
         {/* <Switch>
           <Route exact path="/" />
@@ -43,7 +43,7 @@ function App() {
           </Route>
         </Switch> */}
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
