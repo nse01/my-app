@@ -14,7 +14,7 @@ import { useState } from 'react';
 function App(props) {
   
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="app_container">
         <Header />
         <ContentsArea />
