@@ -1,0 +1,66 @@
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table td {
+  width: 25%;
+  height: 70px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 26px;
+}
+
+.table td:first-child {
+  width: 10%;
+}
+.btn_paging{
+  position: relative;
+  width: 100%;
+  height: 42px;
+  margin: 50px 0;
+}
+
+.btn_before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border: 0 none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: dodgerblue;
+}
+.btn_next{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border: 0 none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: dodgerblue;
+}
+.btn_day_list{
+  text-align: right;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.btn_day_list a{
+  display: inline-block;
+  padding-bottom: 3px;
+  position: relative;
+}
+.btn_day_list a:before{
+  content: ''; position: absolute;width: 0%;height: 1px;background-color: #000;
+  left: 0;bottom: 0;transition: all 0.3s;
+}
+.btn_day_list a:hover:before{width: 100%;}

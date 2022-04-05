@@ -1,0 +1,11 @@
+input{
+  margin: 0;padding: 0;border: 0;word-break: keep-all;vertical-align: middle;background: none;
+}
+.todo_list{
+  margin:  50px auto;
+  max-width: 760px;
+  /* background: rgb(241, 250, 255); */
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}

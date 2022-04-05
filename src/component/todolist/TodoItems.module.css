@@ -1,0 +1,59 @@
+
+.total{
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+}
+.item_list{
+  padding: 11px 15px;
+}
+.item_list button{
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  border: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-left: 10px ;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+.item_list button:hover{
+  background-color: rgb(221, 240, 255);
+  font-weight: 700;
+}
+.item{
+  font-size: 13px;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 450px;
+  width: 100%;
+}
+.item input{
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding: 3px 5px;
+  box-sizing: border-box;
+}
+.btn_other{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+.btn_other input[type=checkbox]{
+  margin-left: 10px;
+}
+.on input{color: red;}
+.on_change{
+  font-weight: 700;
+}
+.item_input{
+  font-weight: 700;
+}
+.item_input_none{
+  font-weight: 500;
+}
+small{
+  color: #ccc;
+}
