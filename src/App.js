@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom'
 import Header from './component/Header';
 import ContentsArea from './component/ContentsArea';
 import TodoListContainer from './component/todolist/TodoListContainer';
@@ -12,10 +12,9 @@ import Etc from './component/etc/Etc';
 import { useState } from 'react';
 
 function App() {
-  console.log(process.env.PUBLIC_URL)
   
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter >
       <div className="app_container">
         <Header />
         <ContentsArea />
@@ -44,7 +43,7 @@ function App() {
           </Route>
         </Switch> */}
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
